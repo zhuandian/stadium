@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="10dp"
+    android:background="#fefefe">
+
+    <ImageView
+        android:id="@+id/iv_stadium_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_stadium_img"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_stadium_img"
+        android:text="标题"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_stadium_img"
+        android:text="内容"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="2018-18-12"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_reserve"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/tv_reserve"
+        android:text="￥500元"
+        android:textColor="#ff4400" />
+
+
+    <TextView
+        android:id="@+id/tv_reserve"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#318bc7"
+        android:gravity="center"
+        android:text="预定"
+        android:textColor="#fff" />
+</RelativeLayout>
