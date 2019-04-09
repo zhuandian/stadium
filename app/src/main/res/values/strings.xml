@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Stadium</string>
+    <string name="app_info">基于Android平台的体育场馆预约系统</string>
 </resources>
