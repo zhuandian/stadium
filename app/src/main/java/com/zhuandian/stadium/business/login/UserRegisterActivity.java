@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.zhuandian.base.BaseActivity;
 import com.zhuandian.stadium.R;
-import com.zhuandian.stadium.business.entity.UserEntity;
+import com.zhuandian.stadium.entity.UserEntity;
 
 import butterknife.BindView;
 import butterknife.OnClick;

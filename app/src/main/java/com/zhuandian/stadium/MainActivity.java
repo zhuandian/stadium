@@ -1,6 +1,7 @@
 package com.zhuandian.stadium;
 
 import com.zhuandian.base.BaseActivity;
+import com.zhuandian.stadium.utils.Constant;
 
 public class MainActivity extends BaseActivity {
 
@@ -12,5 +13,11 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void setUpView() {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Constant.IS_LOGINED = false;
     }
 }

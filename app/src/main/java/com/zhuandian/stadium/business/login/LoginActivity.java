@@ -10,7 +10,8 @@ import android.widget.Toast;
 import com.zhuandian.base.BaseActivity;
 import com.zhuandian.stadium.MainActivity;
 import com.zhuandian.stadium.R;
-import com.zhuandian.stadium.business.entity.UserEntity;
+import com.zhuandian.stadium.entity.UserEntity;
+import com.zhuandian.stadium.utils.Constant;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -66,6 +67,7 @@ public class LoginActivity extends BaseActivity {
                 public void done(UserEntity userEntity, BmobException e) {
                     if (e == null) {
                         startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        Constant.IS_LOGINED = true;
                         finish();
                     } else {
                         Toast.makeText(LoginActivity.this, "登陆失败...", Toast.LENGTH_SHORT).show();

@@ -1,4 +1,4 @@
-package com.zhuandian.stadium.business.entity;
+package com.zhuandian.stadium.entity;
 
 import cn.bmob.v3.BmobUser;
 
