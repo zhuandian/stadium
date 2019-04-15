@@ -23,7 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".business.HelpActivity" />
-        <activity android:name=".business.StadiumDetailActivity"></activity>
+        <activity android:name=".business.StadiumDetailActivity" />
+        <activity android:name=".business.OrderActivity"></activity>
     </application>
 
 </manifest>

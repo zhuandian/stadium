@@ -8,9 +8,11 @@ import com.bumptech.glide.Glide;
 import com.zhuandian.base.BaseActivity;
 import com.zhuandian.stadium.R;
 import com.zhuandian.stadium.entity.StadiumEntity;
+import com.zhuandian.stadium.entity.UserEntity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
 
@@ -49,6 +51,7 @@ public class StadiumDetailActivity extends BaseActivity {
     @OnClick(R.id.tv_reserve)
     public void onClick() {
         stadiumEntity.setState(1);
+        stadiumEntity.setUserId(BmobUser.getCurrentUser(UserEntity.class).getObjectId());
         stadiumEntity.update(new UpdateListener() {
             @Override
             public void done(BmobException e) {

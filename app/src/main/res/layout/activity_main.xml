@@ -11,6 +11,18 @@
         android:layout_height="match_parent" />
 
     <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tv_help"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_btn_bg"
+        android:gravity="center"
+        android:text="我的\n订单"
+        android:textColor="#fff" />
+
+    <TextView
         android:id="@+id/tv_help"
         android:layout_width="50dp"
         android:layout_height="50dp"

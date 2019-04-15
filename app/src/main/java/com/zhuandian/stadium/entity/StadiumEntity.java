@@ -15,6 +15,15 @@ public class StadiumEntity extends BmobObject {
     private String content;
     private int state;  // 1.被预定 2，可预定
     private String price;
+    private String userId; //预订人Id
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public String getImgUrl() {
         return imgUrl;
