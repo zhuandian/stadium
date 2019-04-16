@@ -2,6 +2,7 @@ package com.zhuandian.stadium.business;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
@@ -36,6 +37,7 @@ public class OrderActivity extends BaseActivity {
 
     @Override
     protected void setUpView() {
+        this.setTitle("我的订单");
         UserEntity userEntity = BmobUser.getCurrentUser(UserEntity.class);
         userId = userEntity.getObjectId();
         initData();
